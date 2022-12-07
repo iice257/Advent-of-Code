@@ -1,2 +1,3 @@
-// Day in progress.
-throw new Error("Part 1 in progress");
+import { runPartFromCurrentDay } from "../../_shared/run-part.mjs";
+
+await runPartFromCurrentDay(import.meta.url, 1);
