@@ -1,33 +1,24 @@
 instructions = document.getElementById('instructions').textContent.split('\n');
+const inst = (inst) => inst.split(' ')
+instruction = instructions.map(inst);
 
-instruction = [];
-ins = [];
-toggle = ''
-from = ''
-to = ''
+// console.log(instruction);
 
-for (let o = 0; o < instructions.length; o++) {
-  instruction.push(instructions[o].split(' '));
-  for (let i = 0; i < instruction.length; i++) {
-    ins.push(instruction[i]);
-  }
-  //   if (ins[0] === 'turn') {
-  //     from = ins[2];
-  //     to = ins[4];
-  //   } else {
-  //     toggle = ins[0];
-  //     from = ins[1];
-  //     to = ins[3];
-  //   }
-  //   light = 0;
-  //   if (toggle === 'on') {
-  //     light = 1;
-  //   } else {
-  //     light = 0;
-  //   }
-  // }
-}
+// for (let i = 0; i < instruction.length; i++) {
+//   x = 0
+//   y = 0
+//   z = 0
+//   if (instruction[i][0] !== 'turn') {
+//     x++
+//   // } else if (instruction[i][0] === 'turn' && instruction[i][1] === 'off') {
+//   //   y++
+//   }
+//   else z++
+// }
 
-console.log(ins);
-// console.log(ins);
-console.log(from);
+// console.log(x);
+// console.log(y);
+// console.log(z);
+
+console.log(instruction[0])
+console.log(instruction[0][0] === 'turn' && instruction[0][1] === 'on')
