@@ -1,4 +1,4 @@
-# Advent of Code 2015
+# Advent of Code
 
 I'm just starting to try out these Advent of Code challenges! They seem like a great way to practice and hone my JavaScript skills, and I'm looking forward to working through them.
 
