@@ -1,3 +1,33 @@
-import { runPartFromCurrentDay } from "../../_shared/run-part.mjs";
+import fs from "node:fs";
 
-await runPartFromCurrentDay(import.meta.url, 1);
+function parse(input) {
+  return input
+    .split("\n")
+    .map(x => parseInt(x.replace(/[FL]/g, "0").replace(/[BR]/g, "1"), 2));
+}
+
+export function part1(input) {
+  return Math.max(...parse(input));
+}
+
+export function part2(input) {
+  return (
+    parse(input)
+      .sort((a, b) => a - b)
+      .find((n, i, a) => n - a[0] !== i) - 1
+  );
+}
+
+const input = fs
+  .readFileSync(new URL("input.txt", import.meta.url), "utf8")
+  .replace(/\uFEFF/g, "")
+  .replace(/\r\n/g, "\n")
+  .replace(/\r/g, "\n")
+  .trimEnd();
+
+const solution = typeof day === "function" ? await day(input) : undefined;
+const answer = (typeof part1 === "function" ? await part1(input) : solution?.part1);
+
+if (answer !== undefined && answer !== null) {
+  console.log(typeof answer === "bigint" ? answer.toString() : answer);
+}

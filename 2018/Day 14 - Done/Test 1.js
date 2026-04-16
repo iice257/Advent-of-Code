@@ -1,3 +1,42 @@
-import { runPartFromCurrentDay } from "../../_shared/run-part.mjs";
+import fs from "node:fs";
 
-await runPartFromCurrentDay(import.meta.url, 1);
+function cook(check) {
+  let [elf1, elf2] = [0, 1];
+  let board = [3, 7, 1, 0];
+  while (check(board)) {
+    elf1 = (elf1 + board[elf1] + 1) % board.length;
+    elf2 = (elf2 + board[elf2] + 1) % board.length;
+    let newRecipes = String(board[elf1] + board[elf2]).split("");
+    board.push(...newRecipes.map(Number));
+  }
+  return board;
+}
+
+export function part1(input) {
+  let count = +input;
+  let board = cook(board => board.length < count + 10);
+  return board.slice(count, count + 10).join("");
+}
+
+export function part2(input) {
+  let suffix = "";
+  let board = cook(board => {
+    suffix = board.slice(-1 * input.length - 1).join("");
+    return !suffix.includes(input);
+  });
+  return board.length - input.length + suffix.indexOf(input) - 1;
+}
+
+const input = fs
+  .readFileSync(new URL("input.txt", import.meta.url), "utf8")
+  .replace(/\uFEFF/g, "")
+  .replace(/\r\n/g, "\n")
+  .replace(/\r/g, "\n")
+  .trimEnd();
+
+const solution = typeof day === "function" ? await day(input) : undefined;
+const answer = (typeof part1 === "function" ? await part1(input) : solution?.part1);
+
+if (answer !== undefined && answer !== null) {
+  console.log(typeof answer === "bigint" ? answer.toString() : answer);
+}

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-04-14T14:33:04.613Z",
-  "source": "shahata/adventofcode-solver",
+  "generatedAt": "2026-04-16T13:59:38.381Z",
+  "source": "local-cached-js-files",
   "days": {
     "2015": {
       "1": {
@@ -60,16 +60,16 @@
         "part2": "1102"
       },
       "15": {
-        "part1": null,
-        "part2": null
+        "part1": "13882464",
+        "part2": "11171160"
       },
       "16": {
         "part1": "213",
         "part2": "323"
       },
       "17": {
-        "part1": null,
-        "part2": null
+        "part1": "654",
+        "part2": "57"
       },
       "18": {
         "part1": "814",
@@ -80,8 +80,8 @@
         "part2": "207"
       },
       "20": {
-        "part1": null,
-        "part2": null
+        "part1": "776160",
+        "part2": "786240"
       },
       "21": {
         "part1": "78",
@@ -106,8 +106,8 @@
     },
     "2016": {
       "1": {
-        "part1": null,
-        "part2": null
+        "part1": "353",
+        "part2": "152"
       },
       "2": {
         "part1": "65556",
@@ -122,8 +122,8 @@
         "part2": "324"
       },
       "5": {
-        "part1": null,
-        "part2": null
+        "part1": "f97c354d",
+        "part2": "863dde27"
       },
       "6": {
         "part1": "qzedlxso",
@@ -142,8 +142,8 @@
         "part2": "11558231665"
       },
       "10": {
-        "part1": null,
-        "part2": null
+        "part1": "181",
+        "part2": "12567"
       },
       "11": {
         "part1": "33",
@@ -228,8 +228,8 @@
         "part2": "25071947"
       },
       "6": {
-        "part1": null,
-        "part2": null
+        "part1": "12841",
+        "part2": "8038"
       },
       "7": {
         "part1": "aapssr",
@@ -346,8 +346,8 @@
         "part2": "3668541094"
       },
       "10": {
-        "part1": null,
-        "part2": null
+        "part1": "ZZCBGGCJ",
+        "part2": "10886"
       },
       "11": {
         "part1": "21,53",
@@ -374,8 +374,8 @@
         "part2": "622"
       },
       "17": {
-        "part1": null,
-        "part2": null
+        "part1": "38451",
+        "part2": "28142"
       },
       "18": {
         "part1": "483840",

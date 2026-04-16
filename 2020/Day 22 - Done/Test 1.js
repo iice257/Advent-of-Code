@@ -1,3 +1,69 @@
-import { runPartFromCurrentDay } from "../../_shared/run-part.mjs";
+import fs from "node:fs";
 
-await runPartFromCurrentDay(import.meta.url, 1);
+function check1(players, cards) {
+  return cards.indexOf(Math.max(...cards));
+}
+
+function check2(players, cards) {
+  if (players.every((x, i) => x.length >= cards[i])) {
+    let results = subGame(
+      players.map((p, i) => p.slice(0, cards[i])),
+      check2,
+    );
+    return results.findIndex(x => x > 0);
+  } else {
+    return check1(players, cards);
+  }
+}
+
+function subGame(players, check) {
+  let visited = new Set();
+  while (players.filter(x => x.length > 0).length > 1) {
+    let serialized = players.map(p => p.join(",")).join("#");
+    if (visited.has(serialized)) {
+      return players.map((x, i) => (i === 0 ? 1 : 0));
+    }
+    visited.add(serialized);
+
+    let cards = players.map(player => player.shift() || 0);
+    let winner = check(players, cards);
+    players[winner] = players[winner]
+      .concat(cards.splice(winner, 1))
+      .concat(cards);
+  }
+  return players.map(p =>
+    p.map((x, i) => x * (p.length - i)).reduce((a, b) => a + b, 0),
+  );
+}
+
+function parse(input) {
+  return input
+    .split("\n\n")
+    .map(player => player.split("\n").slice(1).map(Number));
+}
+
+export function part1(input) {
+  let players = parse(input);
+  let results = subGame(players, check1);
+  return results.reduce((a, b) => a + b, 0);
+}
+
+export function part2(input) {
+  let players = parse(input);
+  let results = subGame(players, check2);
+  return results.reduce((a, b) => a + b, 0);
+}
+
+const input = fs
+  .readFileSync(new URL("input.txt", import.meta.url), "utf8")
+  .replace(/\uFEFF/g, "")
+  .replace(/\r\n/g, "\n")
+  .replace(/\r/g, "\n")
+  .trimEnd();
+
+const solution = typeof day === "function" ? await day(input) : undefined;
+const answer = (typeof part1 === "function" ? await part1(input) : solution?.part1);
+
+if (answer !== undefined && answer !== null) {
+  console.log(typeof answer === "bigint" ? answer.toString() : answer);
+}

@@ -1,3 +1,61 @@
-import { runPartFromCurrentDay } from "../../_shared/run-part.mjs";
+import fs from "node:fs";
 
-await runPartFromCurrentDay(import.meta.url, 2);
+function signed(map, i, j, check = c => c && c !== "." && Number.isNaN(+c)) {
+  return [
+    { pos: `${i - 1},${j - 1}`, c: map[i - 1]?.[j - 1] },
+    { pos: `${i - 1},${j}`, c: map[i - 1]?.[j] },
+    { pos: `${i - 1},${j + 1}`, c: map[i - 1]?.[j + 1] },
+    { pos: `${i},${j - 1}`, c: map[i]?.[j - 1] },
+    { pos: `${i},${j + 1}`, c: map[i]?.[j + 1] },
+    { pos: `${i + 1},${j - 1}`, c: map[i + 1]?.[j - 1] },
+    { pos: `${i + 1},${j}`, c: map[i + 1]?.[j] },
+    { pos: `${i + 1},${j + 1}`, c: map[i + 1]?.[j + 1] },
+  ].find(({ c }) => check(c))?.pos;
+}
+
+function parse(input, check) {
+  let map = input.split("\n").map(line => line.split(""));
+  let signs = {};
+  for (let i = 0; i < map.length; i++) {
+    let current = "";
+    let pos = undefined;
+    for (let j = 0; j < map[i].length; j++) {
+      if (Number.isInteger(+map[i][j])) {
+        current += map[i][j];
+        pos = pos || signed(map, i, j, check);
+      } else {
+        if (pos) signs[pos] = (signs[pos] || []).concat(+current);
+        current = "";
+        pos = undefined;
+      }
+    }
+    if (pos) signs[pos] = (signs[pos] || []).concat(+current);
+  }
+  return signs;
+}
+
+export function part1(input) {
+  return Object.values(parse(input))
+    .flat()
+    .reduce((a, b) => a + b, 0);
+}
+
+export function part2(input) {
+  return Object.values(parse(input, c => c === "*"))
+    .map(gear => (gear.length > 1 ? gear.reduce((a, b) => a * b, 1) : 0))
+    .reduce((a, b) => a + b, 0);
+}
+
+const input = fs
+  .readFileSync(new URL("input.txt", import.meta.url), "utf8")
+  .replace(/\uFEFF/g, "")
+  .replace(/\r\n/g, "\n")
+  .replace(/\r/g, "\n")
+  .trimEnd();
+
+const solution = typeof day === "function" ? await day(input) : undefined;
+const answer = (typeof part2 === "function" ? await part2(input) : solution?.part2);
+
+if (answer !== undefined && answer !== null) {
+  console.log(typeof answer === "bigint" ? answer.toString() : answer);
+}

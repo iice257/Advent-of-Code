@@ -1,3 +1,110 @@
-import { runPartFromCurrentDay } from "../../_shared/run-part.mjs";
+import fs from "node:fs";
 
-await runPartFromCurrentDay(import.meta.url, 2);
+const turnLeft = {
+  U: "L",
+  D: "R",
+  L: "D",
+  R: "U",
+};
+
+const turnRight = {
+  U: "R",
+  D: "L",
+  L: "U",
+  R: "D",
+};
+
+const turnBackward = {
+  U: "D",
+  D: "U",
+  L: "R",
+  R: "L",
+};
+
+function turn(state) {
+  let node = state.nodes[toKey(state.position)];
+  switch (node) {
+    case "#":
+      return turnRight[state.direction];
+    case "W":
+      return state.direction;
+    case "F":
+      return turnBackward[state.direction];
+    default:
+      return turnLeft[state.direction];
+  }
+}
+
+function next(node, evolved) {
+  switch (node) {
+    case "#":
+      return evolved ? "F" : ".";
+    case "W":
+      return "#";
+    case "F":
+      return ".";
+    default:
+      return evolved ? "W" : "#";
+  }
+}
+
+function move({ x, y }, direction) {
+  let directions = {
+    U: { x, y: y - 1 },
+    D: { x, y: y + 1 },
+    L: { x: x - 1, y },
+    R: { x: x + 1, y },
+  };
+  return directions[direction];
+}
+
+function toKey({ x, y }) {
+  return `${x}:${y}`;
+}
+
+function burst(state, evolved) {
+  state.direction = turn(state);
+  state.nodes[toKey(state.position)] = next(
+    state.nodes[toKey(state.position)],
+    evolved,
+  );
+  state.infections += state.nodes[toKey(state.position)] === "#" ? 1 : 0;
+  state.position = move(state.position, state.direction);
+}
+
+function parse(input) {
+  let nodes = {};
+  let lines = input.split("\n");
+  let position = { x: (lines[0].length - 1) / 2, y: (lines.length - 1) / 2 };
+  lines.forEach((line, y) =>
+    line.split("").forEach((node, x) => (nodes[toKey({ x, y })] = node)),
+  );
+  return { nodes, position };
+}
+
+export function part1(input, bursts = 1e4, evolved = false) {
+  let { nodes, position } = parse(input);
+  let state = { nodes, position, direction: "U", infections: 0 };
+  for (let i = 0; i < bursts; i++) {
+    burst(state, evolved);
+  }
+  return state.infections;
+}
+
+export function part2(input, bursts = 1e7) {
+  return part1(input, bursts, true);
+}
+
+const input = fs
+  .readFileSync(new URL("input.txt", import.meta.url), "utf8")
+  .replace(/\uFEFF/g, "")
+  .replace(/\r\n/g, "\n")
+  .replace(/\r/g, "\n")
+  .trimEnd();
+
+const solution = typeof day === "function" ? await day(input) : undefined;
+const answer = (typeof part2 === "function" ? await part2(input) : solution?.part2);
+
+if (answer !== undefined && answer !== null) {
+  console.log(typeof answer === "bigint" ? answer.toString() : answer);
+}

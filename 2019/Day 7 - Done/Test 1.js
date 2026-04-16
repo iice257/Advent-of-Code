@@ -1,3 +1,53 @@
-import { runPartFromCurrentDay } from "../../_shared/run-part.mjs";
+import fs from "node:fs";
 
-await runPartFromCurrentDay(import.meta.url, 1);
+import { permutations } from "../../_shared/shims/combinatorial-generators.mjs";
+import { execute } from "../../.cache/upstream/shahata/src/2019/day05.js";
+
+function run(input, inputValues, state) {
+  let user = { input: inputValues, output: undefined };
+  let ops = state ? state.ops : input.split(",").map(Number);
+  let ip = state ? state.ip : 0;
+
+  while (ops[ip] % 100 !== 99) {
+    try {
+      ip = execute(ops, ip, user);
+    } catch {
+      //waiting for input
+      return { user, ops, ip, done: false };
+    }
+  }
+  return { user, ops, ip, done: true };
+}
+
+export function part1(input, phases = [0, 1, 2, 3, 4]) {
+  let results = [...permutations(phases)].map(permutation => {
+    let A, B, C, D, E;
+    do {
+      A = run(input, A ? [E.user.output] : [permutation[0], 0], A);
+      B = run(input, B ? [A.user.output] : [permutation[1], A.user.output], B);
+      C = run(input, C ? [B.user.output] : [permutation[2], B.user.output], C);
+      D = run(input, D ? [C.user.output] : [permutation[3], C.user.output], D);
+      E = run(input, E ? [D.user.output] : [permutation[4], D.user.output], E);
+    } while (!E.done);
+    return E.user.output;
+  });
+  return Math.max(...results);
+}
+
+export function part2(input) {
+  return part1(input, [5, 6, 7, 8, 9]);
+}
+
+const input = fs
+  .readFileSync(new URL("input.txt", import.meta.url), "utf8")
+  .replace(/\uFEFF/g, "")
+  .replace(/\r\n/g, "\n")
+  .replace(/\r/g, "\n")
+  .trimEnd();
+
+const solution = typeof day === "function" ? await day(input) : undefined;
+const answer = (typeof part1 === "function" ? await part1(input) : solution?.part1);
+
+if (answer !== undefined && answer !== null) {
+  console.log(typeof answer === "bigint" ? answer.toString() : answer);
+}

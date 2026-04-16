@@ -1,38 +1,39 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-import {
-  ROOT_DIR,
-  UPSTREAM_SOURCE,
-  listGeneratedDays,
-  readDayInput,
-  solveWithUpstream
-} from "../_shared/upstream.mjs";
+import { ROOT_DIR, exists, listGeneratedDays, runNodeScript } from "../_shared/day-files.mjs";
 
 const manifestPath = path.join(ROOT_DIR, "answers.json");
-
-function serializeValue(value) {
-  return value === undefined || value === null ? null : String(value);
-}
 
 async function main() {
   const manifest = {
     generatedAt: new Date().toISOString(),
-    source: UPSTREAM_SOURCE.id,
+    source: "local-cached-js-files",
     days: {}
   };
 
-  for (const { year, day } of await listGeneratedDays()) {
-    const input = await readDayInput(year, day);
-    const result = await solveWithUpstream(year, day, input);
+  for (const { year, day, part1Path, part2Path } of await listGeneratedDays()) {
+    const part1 = runNodeScript(part1Path);
+    if (part1.status !== 0) {
+      throw new Error(`${year} Day ${day} part 1 failed: ${part1.stderr.trim() || part1.stdout.trim()}`);
+    }
+
+    let part2Value = null;
+    if (await exists(part2Path)) {
+      const part2 = runNodeScript(part2Path);
+      if (part2.status !== 0) {
+        throw new Error(`${year} Day ${day} part 2 failed: ${part2.stderr.trim() || part2.stdout.trim()}`);
+      }
+      part2Value = part2.value;
+    }
 
     if (!manifest.days[year]) {
       manifest.days[year] = {};
     }
 
     manifest.days[year][day] = {
-      part1: serializeValue(result.part1),
-      part2: serializeValue(result.part2)
+      part1: part1.value,
+      part2: part2Value
     };
   }
 
@@ -47,4 +48,3 @@ async function main() {
 }
 
 await main();
-

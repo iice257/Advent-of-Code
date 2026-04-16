@@ -1,3 +1,137 @@
-import { runPartFromCurrentDay } from "../../_shared/run-part.mjs";
+import fs from "node:fs";
 
-await runPartFromCurrentDay(import.meta.url, 1);
+import { execute } from "../../.cache/upstream/shahata/src/2019/day09.js";
+import { powerSet } from "../../_shared/shims/combinatorial-generators.mjs";
+
+export function part1(input) {
+  let mode, doors, items, name, combinations, exit, result;
+  let map = {};
+  let output = [];
+  let commands = [];
+  let allItems = [];
+
+  function pushCommand(cmd) {
+    commands = commands.concat(`${cmd}\n`.split("").map(x => x.charCodeAt(0)));
+  }
+
+  function initCombinations(items) {
+    return [...powerSet(items)].slice(1);
+  }
+
+  function readyForChecks(map, name) {
+    return (
+      name === "== Security Checkpoint ==" &&
+      Object.values(map).every(x => x.doors.length === x.walked.size)
+    );
+  }
+
+  function nextCommand() {
+    if (items.length) {
+      let x = items.shift();
+      pushCommand(`take ${x}`);
+      allItems.push(x);
+    } else if (readyForChecks(map, name)) {
+      combinations = combinations || initCombinations(allItems);
+      let next = combinations[0];
+      if (next.length === allItems.length) {
+        combinations.shift();
+        pushCommand(exit);
+      } else {
+        let remove = allItems.find(x => !next.includes(x));
+        pushCommand(`drop ${remove}`);
+        allItems = allItems.filter(x => x !== remove);
+      }
+    } else {
+      let direction = doors[Math.floor(Math.random() * doors.length)];
+      if (map[name].doors.length > map[name].walked.size) {
+        let options = map[name].doors.filter(x => !map[name].walked.has(x));
+        direction = options[Math.floor(Math.random() * options.length)];
+        map[name].walked.add(direction);
+      }
+      pushCommand(direction);
+    }
+  }
+
+  function parse(line) {
+    if (line[0] !== "-") {
+      mode = "";
+    }
+    if (line[0] === "=") {
+      name = line;
+      doors = [];
+      items = [];
+    }
+    if (mode === "doors") {
+      let opposite = {
+        north: "south",
+        south: "north",
+        west: "east",
+        east: "west",
+      };
+      if (name === "== Pressure-Sensitive Floor ==") {
+        exit = opposite[line.replace("- ", "")];
+      }
+      doors.push(line.replace("- ", ""));
+    }
+    if (mode === "items") {
+      let blacklist = [
+        "escape pod",
+        "infinite loop",
+        "molten lava",
+        "giant electromagnet",
+        "photons",
+      ];
+      if (!blacklist.includes(line.replace("- ", ""))) {
+        items.push(line.replace("- ", ""));
+      }
+    }
+    if (line === "Doors here lead:") {
+      mode = "doors";
+    }
+    if (line === "Items here:") {
+      mode = "items";
+    }
+    if (line.match(/You should be able to get in by typing (\d+)/)) {
+      [, result] = line.match(/You should be able to get in by typing (\d+)/);
+    }
+    if (line === "Command?") {
+      map[name] = map[name] || { doors, walked: new Set() };
+      nextCommand();
+    }
+  }
+
+  function write(x) {
+    if (x === 10) {
+      parse(output.map(x => String.fromCharCode(x)).join(""));
+      output = [];
+    } else {
+      output.push(x);
+    }
+  }
+
+  let user = { input: () => commands.shift(), output: write, base: 0 };
+  let ops = input.split(",").map(Number);
+  let ip = 0;
+  while (!result) {
+    ip = execute(ops, ip, user);
+  }
+  return result;
+}
+
+export function part2() {
+  return undefined;
+}
+
+const input = fs
+  .readFileSync(new URL("input.txt", import.meta.url), "utf8")
+  .replace(/\uFEFF/g, "")
+  .replace(/\r\n/g, "\n")
+  .replace(/\r/g, "\n")
+  .trimEnd();
+
+const solution = typeof day === "function" ? await day(input) : undefined;
+const answer = (typeof part1 === "function" ? await part1(input) : solution?.part1);
+
+if (answer !== undefined && answer !== null) {
+  console.log(typeof answer === "bigint" ? answer.toString() : answer);
+}

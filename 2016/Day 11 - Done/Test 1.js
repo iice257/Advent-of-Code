@@ -1,3 +1,183 @@
-import { runPartFromCurrentDay } from "../../_shared/run-part.mjs";
+import fs from "node:fs";
 
-await runPartFromCurrentDay(import.meta.url, 1);
+import { combinations } from "../../_shared/shims/combinatorial-generators.mjs";
+
+function parse(input) {
+  let pieces = [];
+  let state = {
+    elevator: 0,
+    floors: input.split("\n").map(x => {
+      let generators = x.match(/[^\s]+(?=\s*generator)/g) || [];
+      let microchips = x.match(/[^\s]+(?=-compatible microchip)/g) || [];
+      pieces = pieces.concat(generators).concat(microchips);
+      return { generators, microchips };
+    }),
+  };
+  state.pieces = pieces;
+  return state;
+}
+
+function select(arr, num) {
+  let selected = [];
+  for (num = Math.min(num, arr.length); num > 0; num--) {
+    selected = selected.concat([...combinations(arr, num)]);
+  }
+  return selected;
+}
+
+function applyMove({ elevator, floors, pieces }, diff, move) {
+  return {
+    elevator: elevator + diff,
+    pieces,
+    floors: floors.map((floor, i) => {
+      if (i === elevator) {
+        return {
+          generators: floor.generators.filter(
+            x => !move.generators.includes(x),
+          ),
+          microchips: floor.microchips.filter(
+            x => !move.microchips.includes(x),
+          ),
+        };
+      } else if (i === elevator + diff) {
+        return {
+          generators: floor.generators.concat(move.generators),
+          microchips: floor.microchips.concat(move.microchips),
+        };
+      } else {
+        return floor;
+      }
+    }),
+  };
+}
+
+function legal(state) {
+  return state.floors.every(floor => {
+    return (
+      floor.generators.length === 0 ||
+      floor.microchips.every(m => floor.generators.includes(m))
+    );
+  });
+}
+
+function getMoves(state, diff) {
+  let src = state.floors[state.elevator];
+  let pairs = src.generators.filter(x => src.microchips.includes(x));
+  return pairs
+    .map(x => ({ generators: [x], microchips: [x] }))
+    .concat(
+      select(src.microchips, 2).map(x => ({ microchips: x, generators: [] })),
+    )
+    .concat(
+      select(src.generators, 2).map(x => ({ generators: x, microchips: [] })),
+    )
+    .map(move => applyMove(state, diff, move))
+    .filter(legal);
+}
+
+function getNeighbors(state) {
+  let neighbors = [];
+  if (state.elevator < state.floors.length - 1) {
+    neighbors = neighbors.concat(getMoves(state, 1));
+  }
+  if (
+    state.elevator > 0 &&
+    state.floors.some(
+      (x, i) =>
+        i < state.elevator && x.generators.length + x.microchips.length > 0,
+    )
+  ) {
+    neighbors = neighbors.concat(getMoves(state, -1));
+  }
+  return neighbors;
+}
+
+function done(state) {
+  let { generators, microchips } = state.floors.at(-1);
+  return state.pieces.length === generators.length + microchips.length;
+}
+
+// function print(state) {
+//   let dic = {
+//     promethium: 'P',
+//     cobalt: 'T',
+//     curium: 'C',
+//     ruthenium: 'R',
+//     plutonium: 'L',
+//     elerium: 'E',
+//     dilithium: 'D',
+//     hydrogen: 'H',
+//     lithium: 'M'
+//   };
+//   let str = state.floors.map((floor, i) => {
+//     let str = `${i} `;
+//     str += i === state.elevator ? 'E ' : '  ';
+//     Object.keys(dic).filter(x => state.pieces.includes(x)).forEach(k => {
+//       str += floor.generators.includes(k) ? `${dic[k]}G ` : '   ';
+//       str += floor.microchips.includes(k) ? `${dic[k]}M ` : '   ';
+//     });
+//     return str;
+//   }).reverse().join('\n');
+//   return str;
+// }
+
+function stringify({ elevator, floors }) {
+  return JSON.stringify({
+    elevator,
+    floors: floors.map((floor, i) => {
+      return {
+        generators: floor.generators
+          .map(x => i - floors.findIndex(f => f.microchips.includes(x)))
+          .sort(),
+        microchips: floor.microchips
+          .map(x => i - floors.findIndex(f => f.generators.includes(x)))
+          .sort(),
+      };
+    }),
+  });
+}
+
+function solve(state) {
+  let queue = [{ distance: 0, state, path: [state] }];
+  let visited = new Set().add(stringify(state));
+  while (queue.length > 0) {
+    let { state, distance, path } = queue.shift();
+    let neighbors = getNeighbors(state).filter(x => !visited.has(stringify(x)));
+    for (let x of neighbors) {
+      let json = stringify(x);
+      if (done(x)) {
+        // path.concat(x).forEach(state => console.log(print(state), '\n----------------------'));
+        return distance + 1;
+      } else if (!visited.has(json)) {
+        visited.add(json);
+        queue.push({ distance: distance + 1, state: x, path: path.concat(x) });
+      }
+    }
+  }
+}
+
+export function part1(input) {
+  return solve(parse(input));
+}
+
+export function part2(input) {
+  let state = parse(input);
+  state.floors[0].generators.push("elerium", "dilithium");
+  state.floors[0].microchips.push("elerium", "dilithium");
+  state.pieces.push("elerium", "dilithium", "elerium", "dilithium");
+  return solve(state);
+}
+
+const input = fs
+  .readFileSync(new URL("input.txt", import.meta.url), "utf8")
+  .replace(/\uFEFF/g, "")
+  .replace(/\r\n/g, "\n")
+  .replace(/\r/g, "\n")
+  .trimEnd();
+
+const solution = typeof day === "function" ? await day(input) : undefined;
+const answer = (typeof part1 === "function" ? await part1(input) : solution?.part1);
+
+if (answer !== undefined && answer !== null) {
+  console.log(typeof answer === "bigint" ? answer.toString() : answer);
+}

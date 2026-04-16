@@ -1,3 +1,96 @@
-import { runPartFromCurrentDay } from "../../_shared/run-part.mjs";
+import fs from "node:fs";
 
-await runPartFromCurrentDay(import.meta.url, 1);
+import { execute } from "../../.cache/upstream/shahata/src/2019/day09.js";
+import { ocr } from "../../.cache/upstream/shahata/src/utils/ocr.js";
+
+function move({ x, y }, direction) {
+  const directions = {
+    "^": { x, y: y - 1 },
+    "v": { x, y: y + 1 },
+    "<": { x: x - 1, y },
+    ">": { x: x + 1, y },
+  };
+  return directions[direction];
+}
+
+const left = {
+  "^": "<",
+  "<": "v",
+  "v": ">",
+  ">": "^",
+};
+
+const right = {
+  "^": ">",
+  ">": "v",
+  "v": "<",
+  "<": "^",
+};
+
+export function part1(input, map = {}) {
+  let direction = "^";
+  let position = { x: 0, y: 0 };
+  let outputMode = true;
+
+  function write(value) {
+    if (outputMode) {
+      map[`${position.x},${position.y}`].value = value;
+      map[`${position.x},${position.y}`].writes++;
+    } else {
+      direction = value === 0 ? left[direction] : right[direction];
+      position = move(position, direction);
+    }
+    outputMode = !outputMode;
+  }
+
+  function read() {
+    map[`${position.x},${position.y}`] = map[`${position.x},${position.y}`] || {
+      value: 0,
+      writes: 0,
+    };
+    return map[`${position.x},${position.y}`].value;
+  }
+
+  let user = { input: read, output: write, base: 0 };
+  let ops = input.split(",").map(Number);
+  let ip = 0;
+
+  while (ops[ip] % 100 !== 99) {
+    ip = execute(ops, ip, user);
+  }
+  return Object.values(map).length;
+}
+
+export function part2(input) {
+  let map = { "0,0": { value: 1, writes: 0 } };
+  part1(input, map);
+
+  let coordinates = Object.keys(map)
+    .map(k => k.split(",").map(i => +i))
+    .sort((a, b) => a[1] - b[1] || a[0] - b[0]);
+  let first = coordinates.at(0);
+  let last = coordinates.at(-1);
+  let lines = [];
+  for (let y = first[1]; y <= last[1]; y++) {
+    let line = "";
+    for (let x = first[0]; x <= last[0]; x++) {
+      line += map[`${x},${y}`] && map[`${x},${y}`].value === 1 ? "#" : ".";
+    }
+    lines.push(line);
+  }
+  return ocr(lines.join("\n"));
+}
+
+const input = fs
+  .readFileSync(new URL("input.txt", import.meta.url), "utf8")
+  .replace(/\uFEFF/g, "")
+  .replace(/\r\n/g, "\n")
+  .replace(/\r/g, "\n")
+  .trimEnd();
+
+const solution = typeof day === "function" ? await day(input) : undefined;
+const answer = (typeof part1 === "function" ? await part1(input) : solution?.part1);
+
+if (answer !== undefined && answer !== null) {
+  console.log(typeof answer === "bigint" ? answer.toString() : answer);
+}

@@ -1,3 +1,72 @@
-import { runPartFromCurrentDay } from "../../_shared/run-part.mjs";
+import fs from "node:fs";
 
-await runPartFromCurrentDay(import.meta.url, 2);
+function parse(input) {
+  let [rules, ticket, tickets] = input.split("\n\n");
+  rules = rules
+    .split("\n")
+    .map(x => x.match(/^(.*): (\d+)-(\d+) or (\d+)-(\d+)$/))
+    .map(([, field, a, b, c, d]) => ({ field, a: +a, b: +b, c: +c, d: +d }));
+
+  ticket = ticket.split("\n").pop();
+
+  tickets = tickets
+    .split("\n")
+    .slice(1)
+    .concat([ticket])
+    .map(x => x.split(",").map(Number));
+
+  return { rules, ticket: tickets.at(-1), tickets };
+}
+
+let valid = (n, x) => (n >= x.a && n <= x.b) || (n >= x.c && n <= x.d);
+
+function validate(ticket, rules) {
+  return ticket.reduce((error, n) => {
+    return error + (rules.every(x => !valid(n, x)) ? n : 0);
+  }, 0);
+}
+
+export function part1(input) {
+  let { rules, tickets } = parse(input);
+  return tickets.map(x => validate(x, rules)).reduce((a, b) => a + b);
+}
+
+export function part2(input) {
+  let { rules, ticket, tickets } = parse(input);
+  tickets = tickets.filter(ticket =>
+    ticket.every(n => rules.some(x => valid(n, x))),
+  );
+
+  let remaining = ticket.map((x, i) => i);
+  while (remaining.length > 0) {
+    rules
+      .filter(x => x.position === undefined)
+      .forEach(x => {
+        let found = remaining.filter(i => tickets.every(t => valid(t[i], x)));
+        if (found.length === 1) {
+          x.position = found.pop();
+          x.value = ticket[x.position];
+          remaining = remaining.filter(i => i !== x.position);
+        }
+      });
+  }
+
+  return rules
+    .filter(x => x.field.startsWith("departure"))
+    .sort((a, b) => a.position - b.position)
+    .reduce((mul, x) => mul * x.value, 1);
+}
+
+const input = fs
+  .readFileSync(new URL("input.txt", import.meta.url), "utf8")
+  .replace(/\uFEFF/g, "")
+  .replace(/\r\n/g, "\n")
+  .replace(/\r/g, "\n")
+  .trimEnd();
+
+const solution = typeof day === "function" ? await day(input) : undefined;
+const answer = (typeof part2 === "function" ? await part2(input) : solution?.part2);
+
+if (answer !== undefined && answer !== null) {
+  console.log(typeof answer === "bigint" ? answer.toString() : answer);
+}

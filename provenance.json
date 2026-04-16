@@ -1,1337 +1,1600 @@
 {
-  "generatedAt": "2026-04-14T14:33:04.583Z",
-  "source": "shahata/adventofcode-solver",
+  "generatedAt": "2026-04-16T14:12:32.908Z",
+  "inputSource": "shahata/adventofcode-solver",
+  "solverSource": "shahata/adventofcode-solver",
   "acquisitionMode": "public-mirror",
   "days": {
     "2015": {
       "1": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day01.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day01.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day01.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day01.js",
         "acquisitionMode": "public-mirror"
       },
       "2": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day02.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day02.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day02.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day02.js",
         "acquisitionMode": "public-mirror"
       },
       "3": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day03.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day03.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day03.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day03.js",
         "acquisitionMode": "public-mirror"
       },
       "4": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day04.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day04.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day04.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day04.js",
         "acquisitionMode": "public-mirror"
       },
       "5": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day05.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day05.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day05.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day05.js",
         "acquisitionMode": "public-mirror"
       },
       "6": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day06.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day06.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day06.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day06.js",
         "acquisitionMode": "public-mirror"
       },
       "7": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day07.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day07.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day07.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day07.js",
         "acquisitionMode": "public-mirror"
       },
       "8": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day08.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day08.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day08.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day08.js",
         "acquisitionMode": "public-mirror"
       },
       "9": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day09.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day09.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day09.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day09.js",
         "acquisitionMode": "public-mirror"
       },
       "10": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day10.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day10.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day10.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day10.js",
         "acquisitionMode": "public-mirror"
       },
       "11": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day11.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day11.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day11.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day11.js",
         "acquisitionMode": "public-mirror"
       },
       "12": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day12.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day12.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day12.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day12.js",
         "acquisitionMode": "public-mirror"
       },
       "13": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day13.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day13.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day13.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day13.js",
         "acquisitionMode": "public-mirror"
       },
       "14": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day14.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day14.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day14.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day14.js",
         "acquisitionMode": "public-mirror"
       },
       "15": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day15.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day15.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day15.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day15.js",
         "acquisitionMode": "public-mirror"
       },
       "16": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day16.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day16.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day16.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day16.js",
         "acquisitionMode": "public-mirror"
       },
       "17": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day17.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day17.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day17.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day17.js",
         "acquisitionMode": "public-mirror"
       },
       "18": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day18.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day18.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day18.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day18.js",
         "acquisitionMode": "public-mirror"
       },
       "19": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day19.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day19.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day19.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day19.js",
         "acquisitionMode": "public-mirror"
       },
       "20": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day20.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day20.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day20.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day20.js",
         "acquisitionMode": "public-mirror"
       },
       "21": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day21.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day21.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day21.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day21.js",
         "acquisitionMode": "public-mirror"
       },
       "22": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day22.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day22.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day22.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day22.js",
         "acquisitionMode": "public-mirror"
       },
       "23": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day23.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day23.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day23.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day23.js",
         "acquisitionMode": "public-mirror"
       },
       "24": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day24.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day24.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day24.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day24.js",
         "acquisitionMode": "public-mirror"
       },
       "25": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day25.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day25.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2015/day25.js",
+        "solverPart2Url": null,
         "acquisitionMode": "public-mirror"
       }
     },
     "2016": {
       "1": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day01.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day01.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day01.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day01.js",
         "acquisitionMode": "public-mirror"
       },
       "2": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day02.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day02.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day02.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day02.js",
         "acquisitionMode": "public-mirror"
       },
       "3": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day03.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day03.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day03.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day03.js",
         "acquisitionMode": "public-mirror"
       },
       "4": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day04.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day04.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day04.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day04.js",
         "acquisitionMode": "public-mirror"
       },
       "5": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day05.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day05.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day05.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day05.js",
         "acquisitionMode": "public-mirror"
       },
       "6": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day06.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day06.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day06.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day06.js",
         "acquisitionMode": "public-mirror"
       },
       "7": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day07.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day07.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day07.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day07.js",
         "acquisitionMode": "public-mirror"
       },
       "8": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day08.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day08.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day08.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day08.js",
         "acquisitionMode": "public-mirror"
       },
       "9": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day09.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day09.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day09.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day09.js",
         "acquisitionMode": "public-mirror"
       },
       "10": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day10.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day10.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day10.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day10.js",
         "acquisitionMode": "public-mirror"
       },
       "11": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day11.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day11.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day11.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day11.js",
         "acquisitionMode": "public-mirror"
       },
       "12": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day12.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day12.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day12.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day12.js",
         "acquisitionMode": "public-mirror"
       },
       "13": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day13.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day13.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day13.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day13.js",
         "acquisitionMode": "public-mirror"
       },
       "14": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day14.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day14.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day14.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day14.js",
         "acquisitionMode": "public-mirror"
       },
       "15": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day15.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day15.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day15.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day15.js",
         "acquisitionMode": "public-mirror"
       },
       "16": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day16.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day16.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day16.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day16.js",
         "acquisitionMode": "public-mirror"
       },
       "17": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day17.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day17.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day17.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day17.js",
         "acquisitionMode": "public-mirror"
       },
       "18": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day18.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day18.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day18.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day18.js",
         "acquisitionMode": "public-mirror"
       },
       "19": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day19.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day19.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day19.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day19.js",
         "acquisitionMode": "public-mirror"
       },
       "20": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day20.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day20.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day20.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day20.js",
         "acquisitionMode": "public-mirror"
       },
       "21": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day21.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day21.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day21.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day21.js",
         "acquisitionMode": "public-mirror"
       },
       "22": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day22.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day22.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day22.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day22.js",
         "acquisitionMode": "public-mirror"
       },
       "23": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day23.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day23.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day23.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day23.js",
         "acquisitionMode": "public-mirror"
       },
       "24": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day24.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day24.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day24.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day24.js",
         "acquisitionMode": "public-mirror"
       },
       "25": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day25.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day25.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2016/day25.js",
+        "solverPart2Url": null,
         "acquisitionMode": "public-mirror"
       }
     },
     "2017": {
       "1": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day01.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day01.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day01.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day01.js",
         "acquisitionMode": "public-mirror"
       },
       "2": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day02.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day02.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day02.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day02.js",
         "acquisitionMode": "public-mirror"
       },
       "3": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day03.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day03.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day03.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day03.js",
         "acquisitionMode": "public-mirror"
       },
       "4": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day04.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day04.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day04.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day04.js",
         "acquisitionMode": "public-mirror"
       },
       "5": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day05.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day05.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day05.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day05.js",
         "acquisitionMode": "public-mirror"
       },
       "6": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day06.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day06.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day06.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day06.js",
         "acquisitionMode": "public-mirror"
       },
       "7": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day07.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day07.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day07.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day07.js",
         "acquisitionMode": "public-mirror"
       },
       "8": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day08.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day08.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day08.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day08.js",
         "acquisitionMode": "public-mirror"
       },
       "9": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day09.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day09.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day09.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day09.js",
         "acquisitionMode": "public-mirror"
       },
       "10": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day10.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day10.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day10.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day10.js",
         "acquisitionMode": "public-mirror"
       },
       "11": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day11.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day11.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day11.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day11.js",
         "acquisitionMode": "public-mirror"
       },
       "12": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day12.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day12.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day12.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day12.js",
         "acquisitionMode": "public-mirror"
       },
       "13": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day13.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day13.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day13.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day13.js",
         "acquisitionMode": "public-mirror"
       },
       "14": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day14.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day14.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day14.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day14.js",
         "acquisitionMode": "public-mirror"
       },
       "15": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day15.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day15.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day15.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day15.js",
         "acquisitionMode": "public-mirror"
       },
       "16": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day16.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day16.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day16.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day16.js",
         "acquisitionMode": "public-mirror"
       },
       "17": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day17.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day17.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day17.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day17.js",
         "acquisitionMode": "public-mirror"
       },
       "18": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day18.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day18.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day18.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day18.js",
         "acquisitionMode": "public-mirror"
       },
       "19": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day19.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day19.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day19.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day19.js",
         "acquisitionMode": "public-mirror"
       },
       "20": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day20.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day20.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day20.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day20.js",
         "acquisitionMode": "public-mirror"
       },
       "21": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day21.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day21.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day21.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day21.js",
         "acquisitionMode": "public-mirror"
       },
       "22": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day22.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day22.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day22.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day22.js",
         "acquisitionMode": "public-mirror"
       },
       "23": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day23.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day23.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day23.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day23.js",
         "acquisitionMode": "public-mirror"
       },
       "24": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day24.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day24.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day24.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day24.js",
         "acquisitionMode": "public-mirror"
       },
       "25": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day25.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day25.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2017/day25.js",
+        "solverPart2Url": null,
         "acquisitionMode": "public-mirror"
       }
     },
     "2018": {
       "1": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day01.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day01.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day01.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day01.js",
         "acquisitionMode": "public-mirror"
       },
       "2": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day02.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day02.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day02.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day02.js",
         "acquisitionMode": "public-mirror"
       },
       "3": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day03.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day03.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day03.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day03.js",
         "acquisitionMode": "public-mirror"
       },
       "4": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day04.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day04.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day04.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day04.js",
         "acquisitionMode": "public-mirror"
       },
       "5": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day05.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day05.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day05.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day05.js",
         "acquisitionMode": "public-mirror"
       },
       "6": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day06.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day06.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day06.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day06.js",
         "acquisitionMode": "public-mirror"
       },
       "7": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day07.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day07.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day07.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day07.js",
         "acquisitionMode": "public-mirror"
       },
       "8": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day08.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day08.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day08.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day08.js",
         "acquisitionMode": "public-mirror"
       },
       "9": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day09.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day09.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day09.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day09.js",
         "acquisitionMode": "public-mirror"
       },
       "10": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day10.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day10.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day10.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day10.js",
         "acquisitionMode": "public-mirror"
       },
       "11": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day11.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day11.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day11.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day11.js",
         "acquisitionMode": "public-mirror"
       },
       "12": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day12.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day12.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day12.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day12.js",
         "acquisitionMode": "public-mirror"
       },
       "13": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day13.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day13.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day13.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day13.js",
         "acquisitionMode": "public-mirror"
       },
       "14": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day14.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day14.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day14.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day14.js",
         "acquisitionMode": "public-mirror"
       },
       "15": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day15.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day15.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day15.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day15.js",
         "acquisitionMode": "public-mirror"
       },
       "16": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day16.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day16.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day16.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day16.js",
         "acquisitionMode": "public-mirror"
       },
       "17": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day17.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day17.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day17.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day17.js",
         "acquisitionMode": "public-mirror"
       },
       "18": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day18.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day18.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day18.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day18.js",
         "acquisitionMode": "public-mirror"
       },
       "19": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day19.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day19.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day19.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day19.js",
         "acquisitionMode": "public-mirror"
       },
       "20": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day20.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day20.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day20.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day20.js",
         "acquisitionMode": "public-mirror"
       },
       "21": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day21.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day21.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day21.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day21.js",
         "acquisitionMode": "public-mirror"
       },
       "22": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day22.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day22.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day22.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day22.js",
         "acquisitionMode": "public-mirror"
       },
       "23": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day23.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day23.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day23.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day23.js",
         "acquisitionMode": "public-mirror"
       },
       "24": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day24.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day24.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day24.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day24.js",
         "acquisitionMode": "public-mirror"
       },
       "25": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day25.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day25.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2018/day25.js",
+        "solverPart2Url": null,
         "acquisitionMode": "public-mirror"
       }
     },
     "2019": {
       "1": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day01.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day01.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day01.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day01.js",
         "acquisitionMode": "public-mirror"
       },
       "2": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day02.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day02.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day02.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day02.js",
         "acquisitionMode": "public-mirror"
       },
       "3": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day03.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day03.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day03.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day03.js",
         "acquisitionMode": "public-mirror"
       },
       "4": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day04.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day04.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day04.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day04.js",
         "acquisitionMode": "public-mirror"
       },
       "5": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day05.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day05.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day05.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day05.js",
         "acquisitionMode": "public-mirror"
       },
       "6": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day06.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day06.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day06.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day06.js",
         "acquisitionMode": "public-mirror"
       },
       "7": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day07.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day07.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day07.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day07.js",
         "acquisitionMode": "public-mirror"
       },
       "8": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day08.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day08.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day08.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day08.js",
         "acquisitionMode": "public-mirror"
       },
       "9": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day09.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day09.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day09.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day09.js",
         "acquisitionMode": "public-mirror"
       },
       "10": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day10.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day10.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day10.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day10.js",
         "acquisitionMode": "public-mirror"
       },
       "11": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day11.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day11.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day11.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day11.js",
         "acquisitionMode": "public-mirror"
       },
       "12": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day12.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day12.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day12.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day12.js",
         "acquisitionMode": "public-mirror"
       },
       "13": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day13.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day13.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day13.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day13.js",
         "acquisitionMode": "public-mirror"
       },
       "14": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day14.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day14.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day14.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day14.js",
         "acquisitionMode": "public-mirror"
       },
       "15": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day15.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day15.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day15.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day15.js",
         "acquisitionMode": "public-mirror"
       },
       "16": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day16.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day16.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day16.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day16.js",
         "acquisitionMode": "public-mirror"
       },
       "17": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day17.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day17.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day17.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day17.js",
         "acquisitionMode": "public-mirror"
       },
       "18": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day18.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day18.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day18.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day18.js",
         "acquisitionMode": "public-mirror"
       },
       "19": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day19.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day19.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day19.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day19.js",
         "acquisitionMode": "public-mirror"
       },
       "20": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day20.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day20.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day20.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day20.js",
         "acquisitionMode": "public-mirror"
       },
       "21": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day21.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day21.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day21.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day21.js",
         "acquisitionMode": "public-mirror"
       },
       "22": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day22.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day22.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day22.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day22.js",
         "acquisitionMode": "public-mirror"
       },
       "23": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day23.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day23.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day23.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day23.js",
         "acquisitionMode": "public-mirror"
       },
       "24": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day24.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day24.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day24.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day24.js",
         "acquisitionMode": "public-mirror"
       },
       "25": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day25.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day25.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2019/day25.js",
+        "solverPart2Url": null,
         "acquisitionMode": "public-mirror"
       }
     },
     "2020": {
       "1": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day01.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day01.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day01.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day01.js",
         "acquisitionMode": "public-mirror"
       },
       "2": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day02.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day02.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day02.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day02.js",
         "acquisitionMode": "public-mirror"
       },
       "3": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day03.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day03.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day03.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day03.js",
         "acquisitionMode": "public-mirror"
       },
       "4": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day04.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day04.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day04.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day04.js",
         "acquisitionMode": "public-mirror"
       },
       "5": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day05.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day05.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day05.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day05.js",
         "acquisitionMode": "public-mirror"
       },
       "6": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day06.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day06.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day06.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day06.js",
         "acquisitionMode": "public-mirror"
       },
       "7": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day07.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day07.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day07.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day07.js",
         "acquisitionMode": "public-mirror"
       },
       "8": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day08.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day08.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day08.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day08.js",
         "acquisitionMode": "public-mirror"
       },
       "9": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day09.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day09.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day09.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day09.js",
         "acquisitionMode": "public-mirror"
       },
       "10": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day10.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day10.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day10.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day10.js",
         "acquisitionMode": "public-mirror"
       },
       "11": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day11.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day11.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day11.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day11.js",
         "acquisitionMode": "public-mirror"
       },
       "12": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day12.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day12.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day12.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day12.js",
         "acquisitionMode": "public-mirror"
       },
       "13": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day13.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day13.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day13.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day13.js",
         "acquisitionMode": "public-mirror"
       },
       "14": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day14.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day14.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day14.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day14.js",
         "acquisitionMode": "public-mirror"
       },
       "15": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day15.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day15.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day15.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day15.js",
         "acquisitionMode": "public-mirror"
       },
       "16": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day16.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day16.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day16.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day16.js",
         "acquisitionMode": "public-mirror"
       },
       "17": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day17.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day17.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day17.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day17.js",
         "acquisitionMode": "public-mirror"
       },
       "18": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day18.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day18.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day18.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day18.js",
         "acquisitionMode": "public-mirror"
       },
       "19": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day19.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day19.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day19.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day19.js",
         "acquisitionMode": "public-mirror"
       },
       "20": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day20.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day20.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day20.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day20.js",
         "acquisitionMode": "public-mirror"
       },
       "21": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day21.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day21.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day21.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day21.js",
         "acquisitionMode": "public-mirror"
       },
       "22": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day22.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day22.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day22.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day22.js",
         "acquisitionMode": "public-mirror"
       },
       "23": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day23.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day23.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day23.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day23.js",
         "acquisitionMode": "public-mirror"
       },
       "24": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day24.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day24.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day24.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day24.js",
         "acquisitionMode": "public-mirror"
       },
       "25": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day25.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day25.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2020/day25.js",
+        "solverPart2Url": null,
         "acquisitionMode": "public-mirror"
       }
     },
     "2021": {
       "1": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day01.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day01.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day01.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day01.js",
         "acquisitionMode": "public-mirror"
       },
       "2": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day02.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day02.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day02.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day02.js",
         "acquisitionMode": "public-mirror"
       },
       "3": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day03.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day03.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day03.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day03.js",
         "acquisitionMode": "public-mirror"
       },
       "4": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day04.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day04.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day04.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day04.js",
         "acquisitionMode": "public-mirror"
       },
       "5": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day05.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day05.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day05.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day05.js",
         "acquisitionMode": "public-mirror"
       },
       "6": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day06.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day06.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day06.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day06.js",
         "acquisitionMode": "public-mirror"
       },
       "7": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day07.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day07.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day07.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day07.js",
         "acquisitionMode": "public-mirror"
       },
       "8": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day08.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day08.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day08.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day08.js",
         "acquisitionMode": "public-mirror"
       },
       "9": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day09.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day09.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day09.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day09.js",
         "acquisitionMode": "public-mirror"
       },
       "10": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day10.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day10.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day10.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day10.js",
         "acquisitionMode": "public-mirror"
       },
       "11": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day11.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day11.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day11.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day11.js",
         "acquisitionMode": "public-mirror"
       },
       "12": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day12.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day12.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day12.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day12.js",
         "acquisitionMode": "public-mirror"
       },
       "13": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day13.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day13.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day13.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day13.js",
         "acquisitionMode": "public-mirror"
       },
       "14": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day14.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day14.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day14.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day14.js",
         "acquisitionMode": "public-mirror"
       },
       "15": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day15.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day15.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day15.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day15.js",
         "acquisitionMode": "public-mirror"
       },
       "16": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day16.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day16.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day16.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day16.js",
         "acquisitionMode": "public-mirror"
       },
       "17": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day17.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day17.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day17.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day17.js",
         "acquisitionMode": "public-mirror"
       },
       "18": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day18.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day18.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day18.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day18.js",
         "acquisitionMode": "public-mirror"
       },
       "19": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day19.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day19.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day19.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day19.js",
         "acquisitionMode": "public-mirror"
       },
       "20": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day20.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day20.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day20.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day20.js",
         "acquisitionMode": "public-mirror"
       },
       "21": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day21.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day21.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day21.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day21.js",
         "acquisitionMode": "public-mirror"
       },
       "22": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day22.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day22.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day22.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day22.js",
         "acquisitionMode": "public-mirror"
       },
       "23": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day23.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day23.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day23.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day23.js",
         "acquisitionMode": "public-mirror"
       },
       "24": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day24.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day24.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day24.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day24.js",
         "acquisitionMode": "public-mirror"
       },
       "25": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day25.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day25.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2021/day25.js",
+        "solverPart2Url": null,
         "acquisitionMode": "public-mirror"
       }
     },
     "2022": {
       "1": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day01.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day01.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day01.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day01.js",
         "acquisitionMode": "public-mirror"
       },
       "2": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day02.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day02.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day02.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day02.js",
         "acquisitionMode": "public-mirror"
       },
       "3": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day03.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day03.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day03.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day03.js",
         "acquisitionMode": "public-mirror"
       },
       "4": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day04.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day04.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day04.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day04.js",
         "acquisitionMode": "public-mirror"
       },
       "5": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day05.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day05.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day05.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day05.js",
         "acquisitionMode": "public-mirror"
       },
       "6": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day06.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day06.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day06.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day06.js",
         "acquisitionMode": "public-mirror"
       },
       "7": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day07.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day07.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day07.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day07.js",
         "acquisitionMode": "public-mirror"
       },
       "8": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day08.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day08.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day08.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day08.js",
         "acquisitionMode": "public-mirror"
       },
       "9": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day09.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day09.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day09.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day09.js",
         "acquisitionMode": "public-mirror"
       },
       "10": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day10.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day10.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day10.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day10.js",
         "acquisitionMode": "public-mirror"
       },
       "11": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day11.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day11.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day11.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day11.js",
         "acquisitionMode": "public-mirror"
       },
       "12": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day12.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day12.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day12.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day12.js",
         "acquisitionMode": "public-mirror"
       },
       "13": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day13.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day13.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day13.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day13.js",
         "acquisitionMode": "public-mirror"
       },
       "14": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day14.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day14.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day14.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day14.js",
         "acquisitionMode": "public-mirror"
       },
       "15": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day15.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day15.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day15.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day15.js",
         "acquisitionMode": "public-mirror"
       },
       "16": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day16.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day16.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day16.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day16.js",
         "acquisitionMode": "public-mirror"
       },
       "17": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day17.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day17.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day17.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day17.js",
         "acquisitionMode": "public-mirror"
       },
       "18": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day18.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day18.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day18.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day18.js",
         "acquisitionMode": "public-mirror"
       },
       "19": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day19.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day19.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day19.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day19.js",
         "acquisitionMode": "public-mirror"
       },
       "20": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day20.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day20.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day20.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day20.js",
         "acquisitionMode": "public-mirror"
       },
       "21": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day21.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day21.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day21.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day21.js",
         "acquisitionMode": "public-mirror"
       },
       "22": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day22.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day22.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day22.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day22.js",
         "acquisitionMode": "public-mirror"
       },
       "23": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day23.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day23.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day23.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day23.js",
         "acquisitionMode": "public-mirror"
       },
       "24": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day24.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day24.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day24.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day24.js",
         "acquisitionMode": "public-mirror"
       },
       "25": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day25.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day25.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2022/day25.js",
+        "solverPart2Url": null,
         "acquisitionMode": "public-mirror"
       }
     },
     "2023": {
       "1": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day01.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day01.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day01.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day01.js",
         "acquisitionMode": "public-mirror"
       },
       "2": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day02.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day02.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day02.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day02.js",
         "acquisitionMode": "public-mirror"
       },
       "3": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day03.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day03.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day03.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day03.js",
         "acquisitionMode": "public-mirror"
       },
       "4": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day04.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day04.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day04.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day04.js",
         "acquisitionMode": "public-mirror"
       },
       "5": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day05.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day05.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day05.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day05.js",
         "acquisitionMode": "public-mirror"
       },
       "6": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day06.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day06.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day06.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day06.js",
         "acquisitionMode": "public-mirror"
       },
       "7": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day07.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day07.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day07.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day07.js",
         "acquisitionMode": "public-mirror"
       },
       "8": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day08.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day08.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day08.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day08.js",
         "acquisitionMode": "public-mirror"
       },
       "9": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day09.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day09.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day09.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day09.js",
         "acquisitionMode": "public-mirror"
       },
       "10": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day10.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day10.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day10.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day10.js",
         "acquisitionMode": "public-mirror"
       },
       "11": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day11.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day11.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day11.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day11.js",
         "acquisitionMode": "public-mirror"
       },
       "12": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day12.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day12.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day12.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day12.js",
         "acquisitionMode": "public-mirror"
       },
       "13": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day13.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day13.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day13.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day13.js",
         "acquisitionMode": "public-mirror"
       },
       "14": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day14.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day14.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day14.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day14.js",
         "acquisitionMode": "public-mirror"
       },
       "15": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day15.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day15.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day15.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day15.js",
         "acquisitionMode": "public-mirror"
       },
       "16": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day16.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day16.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day16.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day16.js",
         "acquisitionMode": "public-mirror"
       },
       "17": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day17.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day17.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day17.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day17.js",
         "acquisitionMode": "public-mirror"
       },
       "18": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day18.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day18.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day18.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day18.js",
         "acquisitionMode": "public-mirror"
       },
       "19": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day19.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day19.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day19.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day19.js",
         "acquisitionMode": "public-mirror"
       },
       "20": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day20.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day20.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day20.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day20.js",
         "acquisitionMode": "public-mirror"
       },
       "21": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day21.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day21.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day21.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day21.js",
         "acquisitionMode": "public-mirror"
       },
       "22": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day22.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day22.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day22.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day22.js",
         "acquisitionMode": "public-mirror"
       },
       "23": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day23.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day23.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day23.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day23.js",
         "acquisitionMode": "public-mirror"
       },
       "24": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day24.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day24.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day24.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day24.js",
         "acquisitionMode": "public-mirror"
       },
       "25": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day25.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day25.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2023/day25.js",
+        "solverPart2Url": null,
         "acquisitionMode": "public-mirror"
       }
     },
     "2024": {
       "1": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day01.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day01.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day01.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day01.js",
         "acquisitionMode": "public-mirror"
       },
       "2": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day02.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day02.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day02.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day02.js",
         "acquisitionMode": "public-mirror"
       },
       "3": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day03.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day03.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day03.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day03.js",
         "acquisitionMode": "public-mirror"
       },
       "4": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day04.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day04.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day04.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day04.js",
         "acquisitionMode": "public-mirror"
       },
       "5": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day05.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day05.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day05.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day05.js",
         "acquisitionMode": "public-mirror"
       },
       "6": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day06.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day06.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day06.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day06.js",
         "acquisitionMode": "public-mirror"
       },
       "7": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day07.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day07.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day07.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day07.js",
         "acquisitionMode": "public-mirror"
       },
       "8": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day08.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day08.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day08.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day08.js",
         "acquisitionMode": "public-mirror"
       },
       "9": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day09.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day09.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day09.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day09.js",
         "acquisitionMode": "public-mirror"
       },
       "10": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day10.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day10.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day10.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day10.js",
         "acquisitionMode": "public-mirror"
       },
       "11": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day11.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day11.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day11.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day11.js",
         "acquisitionMode": "public-mirror"
       },
       "12": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day12.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day12.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day12.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day12.js",
         "acquisitionMode": "public-mirror"
       },
       "13": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day13.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day13.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day13.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day13.js",
         "acquisitionMode": "public-mirror"
       },
       "14": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day14.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day14.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day14.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day14.js",
         "acquisitionMode": "public-mirror"
       },
       "15": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day15.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day15.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day15.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day15.js",
         "acquisitionMode": "public-mirror"
       },
       "16": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day16.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day16.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day16.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day16.js",
         "acquisitionMode": "public-mirror"
       },
       "17": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day17.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day17.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day17.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day17.js",
         "acquisitionMode": "public-mirror"
       },
       "18": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day18.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day18.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day18.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day18.js",
         "acquisitionMode": "public-mirror"
       },
       "19": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day19.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day19.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day19.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day19.js",
         "acquisitionMode": "public-mirror"
       },
       "20": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day20.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day20.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day20.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day20.js",
         "acquisitionMode": "public-mirror"
       },
       "21": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day21.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day21.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day21.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day21.js",
         "acquisitionMode": "public-mirror"
       },
       "22": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day22.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day22.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day22.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day22.js",
         "acquisitionMode": "public-mirror"
       },
       "23": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day23.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day23.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day23.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day23.js",
         "acquisitionMode": "public-mirror"
       },
       "24": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day24.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day24.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day24.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day24.js",
         "acquisitionMode": "public-mirror"
       },
       "25": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day25.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day25.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2024/day25.js",
+        "solverPart2Url": null,
         "acquisitionMode": "public-mirror"
       }
     },
     "2025": {
       "1": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day01.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day01.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day01.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day01.js",
         "acquisitionMode": "public-mirror"
       },
       "2": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day02.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day02.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day02.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day02.js",
         "acquisitionMode": "public-mirror"
       },
       "3": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day03.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day03.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day03.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day03.js",
         "acquisitionMode": "public-mirror"
       },
       "4": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day04.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day04.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day04.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day04.js",
         "acquisitionMode": "public-mirror"
       },
       "5": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day05.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day05.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day05.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day05.js",
         "acquisitionMode": "public-mirror"
       },
       "6": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day06.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day06.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day06.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day06.js",
         "acquisitionMode": "public-mirror"
       },
       "7": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day07.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day07.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day07.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day07.js",
         "acquisitionMode": "public-mirror"
       },
       "8": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day08.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day08.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day08.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day08.js",
         "acquisitionMode": "public-mirror"
       },
       "9": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day09.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day09.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day09.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day09.js",
         "acquisitionMode": "public-mirror"
       },
       "10": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day10.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day10.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day10.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day10.js",
         "acquisitionMode": "public-mirror"
       },
       "11": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day11.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day11.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day11.js",
+        "solverPart2Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day11.js",
         "acquisitionMode": "public-mirror"
       },
       "12": {
         "inputUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day12.txt",
-        "solverUrl": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day12.js",
+        "solverPart1Url": "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src/2025/day12.js",
+        "solverPart2Url": null,
         "acquisitionMode": "public-mirror"
       }
     }

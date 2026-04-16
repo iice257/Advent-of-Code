@@ -1,3 +1,64 @@
-import { runPartFromCurrentDay } from "../../_shared/run-part.mjs";
+import fs from "node:fs";
 
-await runPartFromCurrentDay(import.meta.url, 2);
+function findPath(input) {
+  let map = input.split("\n").map(line => line.split(""));
+  let sy = map.findIndex(line => line.includes("S"));
+  let sx = map[sy].indexOf("S");
+  let ey = map.findIndex(line => line.includes("E"));
+  let ex = map[ey].indexOf("E");
+  let queue = [{ x: sx, y: sy }];
+  let visited = new Set([`${sx},${sy}`]);
+  let path = [];
+  map[ey][ex] = ".";
+  while (queue.length) {
+    let { x, y } = queue.shift();
+    path.push({ x, y });
+    if (x === ex && y === ey) break;
+    let neighbors = [
+      { x: x + 1, y },
+      { x: x - 1, y },
+      { x, y: y + 1 },
+      { x, y: y - 1 },
+    ].filter(({ x, y }) => map[y]?.[x] === "." && !visited.has(`${x},${y}`));
+    neighbors.forEach(({ x, y }) => {
+      visited.add(`${x},${y}`);
+      queue.push({ x, y });
+    });
+  }
+  return path;
+}
+
+function countCheats(input, save, cheat) {
+  let distance = (a, b) => Math.abs(a.x - b.x) + Math.abs(a.y - b.y);
+  let path = findPath(input);
+  let count = 0;
+  for (let i = 0; i < path.length - save; i++) {
+    for (let j = i + save; j < path.length; j++) {
+      let length = distance(path[i], path[j]);
+      if (j - i - length >= save && length <= cheat) count++;
+    }
+  }
+  return count;
+}
+
+export function part1(input, save = 100) {
+  return countCheats(input, save, 2);
+}
+
+export function part2(input, save = 100) {
+  return countCheats(input, save, 20);
+}
+
+const input = fs
+  .readFileSync(new URL("input.txt", import.meta.url), "utf8")
+  .replace(/\uFEFF/g, "")
+  .replace(/\r\n/g, "\n")
+  .replace(/\r/g, "\n")
+  .trimEnd();
+
+const solution = typeof day === "function" ? await day(input) : undefined;
+const answer = (typeof part2 === "function" ? await part2(input) : solution?.part2);
+
+if (answer !== undefined && answer !== null) {
+  console.log(typeof answer === "bigint" ? answer.toString() : answer);
+}

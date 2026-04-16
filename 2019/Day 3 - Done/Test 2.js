@@ -1,3 +1,71 @@
-import { runPartFromCurrentDay } from "../../_shared/run-part.mjs";
+import fs from "node:fs";
 
-await runPartFromCurrentDay(import.meta.url, 2);
+function mark(map, current, direction, times) {
+  for (let i = 0; i < times; i++) {
+    if (direction === "U") {
+      current.y--;
+    } else if (direction === "D") {
+      current.y++;
+    } else if (direction === "L") {
+      current.x--;
+    } else if (direction === "R") {
+      current.x++;
+    }
+    current.track++;
+    let value = map.get(`${current.x},${current.y}`) || { ids: 0, tracks: 0 };
+    map.set(`${current.x},${current.y}`, {
+      ids: value.ids + current.id,
+      tracks: value.tracks + current.track,
+    });
+  }
+}
+
+function draw(map, line, id) {
+  let steps = line.split(",");
+  let current = { x: 0, y: 0, track: 0, id };
+  steps.forEach(s => {
+    let [, direction, times] = s.match(/^(.)(\d+)$/);
+    mark(map, current, direction, +times);
+  });
+}
+
+export function part1(input) {
+  let [line1, line2] = input.split("\n");
+  let map = new Map();
+  draw(map, line1, 1);
+  draw(map, line2, 2);
+  let distances = Array.from(map.entries())
+    .filter(entry => entry[1].ids === 3)
+    .map(entry => {
+      return entry[0]
+        .split(",")
+        .map(x => Math.abs(+x))
+        .reduce((a, b) => a + b);
+    });
+  return Math.min(...distances);
+}
+
+export function part2(input) {
+  let [line1, line2] = input.split("\n");
+  let map = new Map();
+  draw(map, line1, 1);
+  draw(map, line2, 2);
+  let distances = Array.from(map.values())
+    .filter(x => x.ids === 3)
+    .map(x => x.tracks);
+  return Math.min(...distances);
+}
+
+const input = fs
+  .readFileSync(new URL("input.txt", import.meta.url), "utf8")
+  .replace(/\uFEFF/g, "")
+  .replace(/\r\n/g, "\n")
+  .replace(/\r/g, "\n")
+  .trimEnd();
+
+const solution = typeof day === "function" ? await day(input) : undefined;
+const answer = (typeof part2 === "function" ? await part2(input) : solution?.part2);
+
+if (answer !== undefined && answer !== null) {
+  console.log(typeof answer === "bigint" ? answer.toString() : answer);
+}

@@ -1,3 +1,79 @@
-import { runPartFromCurrentDay } from "../../_shared/run-part.mjs";
+import fs from "node:fs";
 
-await runPartFromCurrentDay(import.meta.url, 1);
+function parse(input) {
+  return input.split("\n").map(x => x.split("/").map(n => +n));
+}
+
+function toKey(item) {
+  return [
+    Array.from(item.visited)
+      .map(x => x.join("-"))
+      .sort()
+      .join(","),
+    item.strength,
+    item.port,
+  ].join(":");
+}
+
+function getNext(components, current, cache) {
+  let next = components.filter(x => {
+    return (
+      (x[0] === current.port || x[1] === current.port) &&
+      !current.visited.has(x)
+    );
+  });
+  return next
+    .map(x => {
+      return {
+        visited: new Set(current.visited).add(x),
+        strength: current.strength + x[0] + x[1],
+        port: x[0] === current.port ? x[1] : x[0],
+      };
+    })
+    .filter(x => {
+      let key = toKey(x);
+      return !cache.has(key) && cache.add(key);
+    });
+}
+
+function solve(components, compare) {
+  let cache = new Set();
+  let max = { visited: new Set(), strength: 0, port: 0 };
+  let queue = getNext(components, max, cache);
+  while (queue.length > 0) {
+    let current = queue.shift();
+    max = compare(current, max) ? current : max;
+    queue = queue.concat(getNext(components, current, cache));
+  }
+  return max.strength;
+}
+
+export function part1(input) {
+  let components = parse(input);
+  return solve(components, (current, max) => current.strength > max.strength);
+}
+
+export function part2(input) {
+  let components = parse(input);
+  return solve(components, (current, max) => {
+    return (
+      current.visited.size > max.visited.size ||
+      (current.visited.size === max.visited.size &&
+        current.strength > max.strength)
+    );
+  });
+}
+
+const input = fs
+  .readFileSync(new URL("input.txt", import.meta.url), "utf8")
+  .replace(/\uFEFF/g, "")
+  .replace(/\r\n/g, "\n")
+  .replace(/\r/g, "\n")
+  .trimEnd();
+
+const solution = typeof day === "function" ? await day(input) : undefined;
+const answer = (typeof part1 === "function" ? await part1(input) : solution?.part1);
+
+if (answer !== undefined && answer !== null) {
+  console.log(typeof answer === "bigint" ? answer.toString() : answer);
+}

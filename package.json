@@ -1,5 +1,5 @@
 {
-  "name": "advent-of-code-simulated",
+  "name": "advent-of-code-real-js",
   "private": true,
   "type": "module",
   "engines": {
@@ -9,8 +9,6 @@
     "solve": "node scripts/solve.mjs",
     "answers": "node scripts/update-answers.mjs",
     "verify": "node scripts/verify.mjs",
-    "history:plan": "node scripts/generate-history-plan.mjs",
-    "history:replay": "node scripts/replay-history.mjs",
     "provenance": "node scripts/update-provenance.mjs"
   }
 }

@@ -1,3 +1,81 @@
-import { runPartFromCurrentDay } from "../../_shared/run-part.mjs";
+import fs from "node:fs";
 
-await runPartFromCurrentDay(import.meta.url, 2);
+let readRaw = (input, length) => input.splice(0, length);
+let toNumber = number => parseInt(number.join(""), 2);
+let readNumber = (input, length) => toNumber(readRaw(input, length));
+
+function calculate(input, sumOfVersions = false) {
+  let version = readNumber(input, 3);
+  let typeId = readNumber(input, 3);
+  if (typeId === 4) {
+    let haveMore = 1;
+    let number = [];
+    while (haveMore === 1) {
+      haveMore = readNumber(input, 1);
+      number = number.concat(readRaw(input, 4));
+    }
+    return sumOfVersions ? version : toNumber(number);
+  } else {
+    let lengthTypeId = readNumber(input, 1);
+    let subPackets = [];
+    if (lengthTypeId === 1) {
+      let numberOfPackets = readNumber(input, 11);
+      for (let i = 0; i < numberOfPackets; i++) {
+        subPackets.push(calculate(input, sumOfVersions));
+      }
+    } else {
+      let lengthOfPackets = readNumber(input, 15);
+      let targetLength = input.length - lengthOfPackets;
+      while (input.length !== targetLength) {
+        subPackets.push(calculate(input, sumOfVersions));
+      }
+    }
+    if (sumOfVersions) return version + subPackets.reduce((a, b) => a + b, 0);
+    switch (typeId) {
+      case 0:
+        return subPackets.reduce((a, b) => a + b, 0);
+      case 1:
+        return subPackets.reduce((a, b) => a * b, 1);
+      case 2:
+        return Math.min(...subPackets);
+      case 3:
+        return Math.max(...subPackets);
+      case 5:
+        return subPackets[0] > subPackets[1] ? 1 : 0;
+      case 6:
+        return subPackets[0] < subPackets[1] ? 1 : 0;
+      case 7:
+        return subPackets[0] === subPackets[1] ? 1 : 0;
+    }
+  }
+}
+
+export function part1(input) {
+  input = input
+    .split("")
+    .map(n => parseInt(n, 16).toString(2).padStart(4, "0").split(""))
+    .flat();
+  return calculate(input, true);
+}
+
+export function part2(input) {
+  input = input
+    .split("")
+    .map(n => parseInt(n, 16).toString(2).padStart(4, "0").split(""))
+    .flat();
+  return calculate(input);
+}
+
+const input = fs
+  .readFileSync(new URL("input.txt", import.meta.url), "utf8")
+  .replace(/\uFEFF/g, "")
+  .replace(/\r\n/g, "\n")
+  .replace(/\r/g, "\n")
+  .trimEnd();
+
+const solution = typeof day === "function" ? await day(input) : undefined;
+const answer = (typeof part2 === "function" ? await part2(input) : solution?.part2);
+
+if (answer !== undefined && answer !== null) {
+  console.log(typeof answer === "bigint" ? answer.toString() : answer);
+}

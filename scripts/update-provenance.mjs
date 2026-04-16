@@ -1,29 +1,48 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 
-import { ROOT_DIR, UPSTREAM_SOURCE, latestCoveredDay } from "../_shared/upstream.mjs";
+import { ROOT_DIR, exists, listGeneratedDays, padDay } from "../_shared/day-files.mjs";
 
-function padDay(day) {
-  return String(day).padStart(2, "0");
+const INPUT_SOURCE = {
+  id: "shahata/adventofcode-solver",
+  rawBase: "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src",
+  acquisitionMode: "public-mirror"
+};
+
+const SOLVER_SOURCE = {
+  id: "shahata/adventofcode-solver",
+  repoBase: "https://raw.githubusercontent.com/shahata/adventofcode-solver/main/src"
+};
+
+function solverPath(year, day, part) {
+  const paddedDay = padDay(day);
+  return `${year}/day${paddedDay}.js`;
 }
 
 async function main() {
   const provenance = {
     generatedAt: new Date().toISOString(),
-    source: UPSTREAM_SOURCE.id,
-    acquisitionMode: UPSTREAM_SOURCE.inputMode,
+    inputSource: INPUT_SOURCE.id,
+    solverSource: SOLVER_SOURCE.id,
+    acquisitionMode: INPUT_SOURCE.acquisitionMode,
     days: {}
   };
 
-  for (let year = 2015; year <= 2025; year += 1) {
-    provenance.days[year] = {};
-    for (let day = 1; day <= latestCoveredDay(year); day += 1) {
-      provenance.days[year][day] = {
-        inputUrl: `${UPSTREAM_SOURCE.rawBase}/${year}/day${padDay(day)}.txt`,
-        solverUrl: `${UPSTREAM_SOURCE.rawBase}/${year}/day${padDay(day)}.js`,
-        acquisitionMode: UPSTREAM_SOURCE.inputMode
-      };
+  for (const { year, day, part2Path } of await listGeneratedDays()) {
+    if (!provenance.days[year]) {
+      provenance.days[year] = {};
     }
+
+    const part2Url = await exists(part2Path)
+      ? `${SOLVER_SOURCE.repoBase}/${solverPath(year, day, 2)}`
+      : null;
+
+    provenance.days[year][day] = {
+      inputUrl: `${INPUT_SOURCE.rawBase}/${year}/day${padDay(day)}.txt`,
+      solverPart1Url: `${SOLVER_SOURCE.repoBase}/${solverPath(year, day, 1)}`,
+      solverPart2Url: part2Url,
+      acquisitionMode: INPUT_SOURCE.acquisitionMode
+    };
   }
 
   await fs.writeFile(
@@ -36,4 +55,3 @@ async function main() {
 }
 
 await main();
-

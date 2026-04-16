@@ -1,3 +1,33 @@
-import { runPartFromCurrentDay } from "../../_shared/run-part.mjs";
+import fs from "node:fs";
 
-await runPartFromCurrentDay(import.meta.url, 2);
+function parse(input) {
+  return input.split("").map(x => (x === "(" ? 1 : -1));
+}
+
+export function part1(input) {
+  return parse(input).reduce((sum, x) => sum + x);
+}
+
+export function part2(input) {
+  return parse(input).reduce(
+    (state, x, index) => ({
+      sum: state.sum + x,
+      marker: state.marker || (state.sum + x === -1 ? index + 1 : undefined),
+    }),
+    { sum: 0, marker: undefined },
+  ).marker;
+}
+
+const input = fs
+  .readFileSync(new URL("input.txt", import.meta.url), "utf8")
+  .replace(/\uFEFF/g, "")
+  .replace(/\r\n/g, "\n")
+  .replace(/\r/g, "\n")
+  .trimEnd();
+
+const solution = typeof day === "function" ? await day(input) : undefined;
+const answer = (typeof part2 === "function" ? await part2(input) : solution?.part2);
+
+if (answer !== undefined && answer !== null) {
+  console.log(typeof answer === "bigint" ? answer.toString() : answer);
+}
